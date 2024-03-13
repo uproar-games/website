@@ -3,7 +3,7 @@ import { ValButton } from "./components/button";
 
 export default function Home() {
 	return (
-		<main className="relative bg-secondary w-screen min-h-screen">
+		<main className="relative bg-secondary w-full min-h-full">
 			{/* Background text */}
 			<div className="top-0 left-0 fixed flex flex-wrap justify-start items-start h-screen overflow-hidden pointer-events-none select-none">
 				<div className="w-screen min-w-[60rem] h-full">

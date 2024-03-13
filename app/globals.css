@@ -42,3 +42,14 @@
 		0 24px
 	);
 }
+
+.dropdown-arrow-clip {
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% calc(100% - 15%),
+		40% 100%,
+		0 calc(100% - 15%),
+		0 0
+	);
+}

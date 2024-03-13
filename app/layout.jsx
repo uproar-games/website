@@ -1,3 +1,4 @@
+import { Navbar } from "./components/navbar";
 import "./globals.css";
 
 export const metadata = {
@@ -37,7 +38,10 @@ export default function RootLayout({ children }) {
 				/>
 				<meta name="twitter:image" content="/og.png" />
 			</head>
-			<body className="font-din-w05">{children}</body>
+			<body className="font-din-w05 overflow-x-hidden">
+				<Navbar />
+				{children}
+			</body>
 		</html>
 	);
 }
