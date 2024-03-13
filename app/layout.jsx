@@ -1,10 +1,6 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Navbar } from "./components/navbar";
 import "./globals.css";
-
-export const metadata = {
-	title: "Valorant",
-	description: "Oopsies! We're under maintainance!",
-};
 
 export default function RootLayout({ children }) {
 	return (
@@ -41,6 +37,7 @@ export default function RootLayout({ children }) {
 			<body className="font-din-w05 overflow-x-hidden">
 				<Navbar />
 				{children}
+				<Analytics />
 			</body>
 		</html>
 	);
