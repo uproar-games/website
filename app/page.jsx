@@ -6,14 +6,19 @@ export default function Home() {
 		<main className="relative bg-secondary w-screen min-h-screen">
 			{/* Background text */}
 			<div className="top-0 left-0 fixed flex flex-wrap justify-start items-start h-screen overflow-hidden pointer-events-none select-none">
-				{[...Array(4)].map((e) => (
-					<p
-						key={e}
-						className="m-0 font-bold font-din-w05 text-[20vw] [-webkit-text-stroke:1px_#fff2] uppercase [line-height:0.85] text-[#0000] [text-stroke:1px_#fff2]"
-					>
-						Oopsies!
-					</p>
-				))}
+				<div className="w-screen min-w-[60rem] h-full">
+					{[...Array(10)].map((e, i) => (
+						<p
+							key={e}
+							className="m-0 w-full font-bold font-din-w05 text-[#0000] text-[max(20vw,10rem)] [-webkit-text-stroke:1px_#fff2] [text-stroke:1px_#fff2] uppercase self-end [line-height:0.85]"
+							style={{
+								textAlign: i % 2 === 0 ? "left" : "right",
+							}}
+						>
+							Oopsies!
+						</p>
+					))}
+				</div>
 			</div>
 
 			{/* Actual page */}
