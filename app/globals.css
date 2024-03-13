@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "DIN Next W1G";
+	src: url("/DINNextW1G.woff2"), format("woff2");
+}
+@font-face {
+	font-family: "DIN Next W05";
+	font-weight: bold;
+	src: url("/DINNextW05-Bold.woff2"), format("woff2");
+}
+@font-face {
+	font-family: "DIN Next W05";
+	font-weight: normal;
+	src: url("/DINNextW05-Medium.woff2"), format("woff2");
+}
+@font-face {
+	font-family: "Tungsten";
+	src: url("/Tungsten.woff2"), format("woff2");
+}
+
+.font-din-w1g {
+	font-family: "DIN Next W1G";
+}
+.font-din-w05 {
+	font-family: "DIN Next W05";
+}
+.font-tungsten {
+	font-family: "Tungsten";
+}
+
+.bevel-tl-br {
+	clip-path: polygon(
+		0 24px,
+		24px 0,
+		100% 0,
+		100% calc(100% - 24px),
+		calc(100% - 24px) 100%,
+		0 100%,
+		0 24px
+	);
+}
