@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 import { ValButton } from "./components/button";
 
 export default function Home() {
@@ -31,7 +31,13 @@ export default function Home() {
 					<p className="font-din-w1g text-center text-lg">
 						While you're waiting, check out our new update teaser!
 					</p>
-					<ValButton>Watch now</ValButton>
+					<ValButton
+						onClick={() => {
+							window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+						}}
+					>
+						Watch now
+					</ValButton>
 				</div>
 			</div>
 		</main>

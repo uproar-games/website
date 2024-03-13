@@ -1,11 +1,12 @@
-export function ValButton({ children, onLightBg }) {
-	const borderColor = onLightBg ? "border_dark" : "border_light";
+"use client";
+export function ValButton({ children, onClick }) {
 	return (
 		<div className="flex flex-col justify-center items-center">
 			<div className="border-t border-r border-border_dark border-l w-48 h-7 translate-y-5 pointer-events-none select-none" />
 			<button
 				type="button"
 				className="relative w-44 h-12 font-bold font-din-w05 text-primary overflow-hidden group"
+				onClick={onClick}
 			>
 				<div className="top-0 right-0 left-[0.2rem] absolute bg-accent h-[0.2rem]" />
 				<div className="top-[0.2rem] right-0 bottom-0 left-0 absolute bg-accent" />
