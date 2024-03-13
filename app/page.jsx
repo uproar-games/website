@@ -26,8 +26,7 @@ export default function Home() {
 				{/* Maintainance notice */}
 				<div className="flex flex-col justify-center items-center gap-4 bg-primary p-8 w-[calc(100vw-4rem)] max-w-[40rem] h-[calc(100vh-4rem)] max-h-[30rem] text-secondary bevel-tl-br">
 					<h1 className="font-tungsten text-[6rem] [letter-spacing:0.25rem] [line-height:1] text-accent">
-						{/* Uh oh! */}
-						{[85, 104, 32, 111, 104, 33].map((e) => String.fromCharCode(e))}
+						Uh oh!
 					</h1>
 					<p className="font-din-w1g text-center text-lg">
 						Sorry! We have massive skill issues and are currently unable to
