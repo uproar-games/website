@@ -31,7 +31,7 @@ export default function Home() {
 					<p className="font-din-w1g text-center text-lg">
 						Sorry! We have massive skill issues and are currently unable to
 						serve our players. Please wait while we discipline the new intern
-						that pushed a refactoring commit to production.
+						that pushed a refactoring commit to the production branch.
 					</p>
 					<p className="font-din-w1g text-center text-lg">
 						While you're waiting, check out our new update teaser!
